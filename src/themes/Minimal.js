@@ -31,6 +31,12 @@ const MinimalThemeOptions = {
         background: 'grey',
         color: 'white',
         marginTop: '10px'
+      },
+      itemButtonActive: {
+        WebkitAppearance: 'none',
+        background: 'white',
+        color: 'grey',
+        marginTop: '10px'
       }
     }
   },

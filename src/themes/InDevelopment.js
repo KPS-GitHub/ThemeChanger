@@ -20,6 +20,19 @@ const InDevelopmentThemeOptions = {
       background: 'green',
       color: 'white',
       paddingTop: '30px'
+    },
+    content: {
+      list: {
+
+      },
+      itemButton: {
+        background: 'grey',
+        color: 'white',
+        marginTop: '10px'
+      },
+      itemButtonActive: {
+        marginTop: '10px'
+      }
     }
   },
   content: {
