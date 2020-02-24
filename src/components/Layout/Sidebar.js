@@ -3,8 +3,8 @@ import { DataContext } from '../../DataContext'
 import styled from 'styled-components'
  
 const Wrap = styled.div`
-  padding-left: 25px;
-  padding-right: 25px;
+  // padding-left: 25px;
+  // padding-right: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,21 +15,17 @@ const Wrap = styled.div`
 
 const SideBar = ({ styles, updateTheme }) => {
   const themeData = useContext(DataContext).allContentfulThemes.edges[0].node.themesList;
-  console.log("sidebar data: ", themeData);
-  console.log("sidebar styles: ", styles);
 
-  // dummy theme data - still need to populate contentful and hook it up
-  const fakeThemeData = [{title: "Minimal"}, {title: "InDevelopment"}];
   return (
     <Wrap>
       <h5>Pick a Theme</h5>
-      <ul style={styles.list}>
+      <ul style={styles && styles.list && styles.list}>
         {themeData && 
           themeData.map((theme, i) => {
             return (
               <li key={`theme`+i}>
                 <button
-                  style={styles.itemButton}
+                  style={styles && styles.itemButton && styles.itemButton}
                   onClick={() => updateTheme(theme.title)}>
                     {theme.title}
                 </button>

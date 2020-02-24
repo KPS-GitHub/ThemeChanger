@@ -23,11 +23,14 @@ const MinimalThemeOptions = {
     },
     content: {
       list: {
-        listStyleType: 'none'
+        listStyleType: 'none',
+        paddingLeft: 0
       },
       itemButton: {
         WebkitAppearance: 'none',
-        background: 'white'
+        background: 'grey',
+        color: 'white',
+        marginTop: '10px'
       }
     }
   },
