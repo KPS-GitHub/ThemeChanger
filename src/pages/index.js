@@ -69,5 +69,14 @@ export const pageQuery = graphql`
         }
       }
     }
+    allContentfulThemes {
+      edges {
+        node {
+          themesList {
+            title
+          }
+        }
+      }
+    }
   }
 `;

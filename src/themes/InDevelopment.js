@@ -19,6 +19,7 @@ const InDevelopmentThemeOptions = {
     container: {
       background: 'green',
       color: 'white',
+      paddingTop: '30px'
     }
   },
   content: {

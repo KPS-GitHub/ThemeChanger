@@ -1,31 +1,42 @@
 const MinimalThemeOptions = {
   window: {
-    background: 'white'
+
   },
   header: {
     container: {
       background: 'black',
       color: 'white',
-      borderBottom: '5px solid white',
     }
   },
   footer: {
     container: {
       background: 'black',
       color: 'white',
-      borderTop: '5px solid white'
     }
   },
   sidebar: {
     container: {
       background: 'black',
       color: 'white',
+      paddingTop: '25px',
+      margin: '5px 0'
+    },
+    content: {
+      list: {
+        listStyleType: 'none',
+        paddingLeft: 0
+      },
+      itemButton: {
+        WebkitAppearance: 'none',
+        background: 'grey',
+        color: 'white',
+        marginTop: '10px'
+      }
     }
   },
   content: {
     container: {
-      background: 'white',
-      color: 'black'
+
     },
     hero: {
 
