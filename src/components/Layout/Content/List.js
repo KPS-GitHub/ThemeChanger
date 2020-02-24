@@ -7,15 +7,14 @@ const Wrap = styled.div`
 `
  
 const List = props => {
-  const data = useContext(DataContext);
-  const items = ["item 1", "item 2", "item 3"];
+  const listData = useContext(DataContext).allContentfulList.edges[0].node;
 
   return (
     <Wrap>
-      <h3>list of things</h3>
+      <h3>{listData.title}</h3>
       <ul>
-        {items ? 
-          items.map((item, i) => {
+        {listData && listData.items ? 
+          listData.items.map((item, i) => {
             return(
               <li key={item+i}>{item}</li>
             )
