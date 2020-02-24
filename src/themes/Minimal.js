@@ -26,7 +26,7 @@ const MinimalThemeOptions = {
         listStyleType: 'none'
       },
       itemButton: {
-        '-webkit-appearance': 'none',
+        WebkitAppearance: 'none',
         background: 'white'
       }
     }

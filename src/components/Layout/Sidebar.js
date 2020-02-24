@@ -14,24 +14,24 @@ const Wrap = styled.div`
 `
 
 const SideBar = ({ styles, updateTheme }) => {
-  const data = useContext(DataContext);
-  // console.log("sidebar data: ", data);
-  // console.log("sidebar styles: ", styles);
+  const themeData = useContext(DataContext).allContentfulThemes.edges[0].node.themesList;
+  console.log("sidebar data: ", themeData);
+  console.log("sidebar styles: ", styles);
 
   // dummy theme data - still need to populate contentful and hook it up
-  const fakeThemeData = ["Minimal", "InDevelopment"];
+  const fakeThemeData = [{title: "Minimal"}, {title: "InDevelopment"}];
   return (
     <Wrap>
       <h5>Pick a Theme</h5>
       <ul style={styles.list}>
-        {fakeThemeData && 
-          fakeThemeData.map((theme, i) => {
+        {themeData && 
+          themeData.map((theme, i) => {
             return (
               <li key={`theme`+i}>
                 <button
                   style={styles.itemButton}
-                  onClick={() => updateTheme(theme)}>
-                    {theme}
+                  onClick={() => updateTheme(theme.title)}>
+                    {theme.title}
                 </button>
               </li>
             )
