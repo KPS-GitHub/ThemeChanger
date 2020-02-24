@@ -8,12 +8,16 @@ const Wrap = styled.div`
   flex-direction: column;
   align-items: center;
   flex-wrap: nowrap;
+  h1 {
+    margin: 1rem 0;
+  }
   .pic-and-copy {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
   }
   .pic {
     width: 20%;
+    margin-right: 1rem;
   }
   .copy {
     width: 80%;

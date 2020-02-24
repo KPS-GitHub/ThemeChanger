@@ -20,7 +20,7 @@ const Wrap = styled.div`
   }
   .slides-row {
     position: absolute;
-    z-index: -10;
+    // z-index: -10;
     // left: 0;
     top: 0;
     flex-direction: row;
