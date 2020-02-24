@@ -25,6 +25,9 @@ const Page = ({ children }) => {
   // console.log("contextData: ", data);
 
   const [theme, setTheme] = useState('Minimal');
+  const updateTheme = (thm) => {
+    setTheme(thm)
+  }
 
   const Theme = Themes[theme];
 
@@ -43,7 +46,7 @@ const Page = ({ children }) => {
         <Container>
           <Row>
             <Col sm={12} md={3}  style={Theme.sidebar.container}>
-              <Sidebar />
+              <Sidebar styles={Theme.sidebar.content} updateTheme={updateTheme} />
             </Col>  
             <Col sm={12} md={9} className="content-col" style={Theme.content.container}>  {/* page content column */}
               <Hero />

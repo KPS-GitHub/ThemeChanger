@@ -6,20 +6,29 @@ const MinimalThemeOptions = {
     container: {
       background: 'black',
       color: 'white',
-      borderBottom: '5px solid white',
     }
   },
   footer: {
     container: {
       background: 'black',
       color: 'white',
-      borderTop: '5px solid white'
     }
   },
   sidebar: {
     container: {
       background: 'black',
       color: 'white',
+      paddingTop: '25px',
+      margin: '5px 0'
+    },
+    content: {
+      list: {
+        listStyleType: 'none'
+      },
+      itemButton: {
+        '-webkit-appearance': 'none',
+        background: 'white'
+      }
     }
   },
   content: {
