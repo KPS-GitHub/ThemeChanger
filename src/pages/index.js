@@ -26,5 +26,46 @@ export const pageQuery = graphql`
         }
       }
     }
+    allContentfulList {
+      edges {
+        node {
+          title
+          items
+        }
+      }
+    }
+    allContentfulHero {
+      edges {
+        node {
+          siteTitle
+          heroTitle
+          copy {
+            copy
+          }
+          image {
+            fluid {
+              src
+            }
+          }
+        }
+      }
+    }
+    allContentfulSlider {
+      edges {
+        node {
+          slides {
+            title
+            copy {
+              copy
+            }
+            image {
+              fluid {
+                src
+              }
+            }
+          }
+        }
+      }
+    }
   }
 `;
