@@ -24,7 +24,7 @@ const Wrap = styled.div`
 const Page = ({ children }) => {
   // console.log("contextData: ", data);
 
-  const [theme, setTheme] = useState('InDev');
+  const [theme, setTheme] = useState('Minimal');
 
   const Theme = Themes[theme];
 
