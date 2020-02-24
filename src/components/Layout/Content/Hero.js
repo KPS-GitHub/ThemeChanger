@@ -1,8 +1,13 @@
 import React, { useContext } from 'react'
-import { DataContext } from '../../../DataContext'
+import Img from 'gatsby-image'
 import styled from 'styled-components'
+import { DataContext } from '../../../DataContext'
  
 const Wrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
   .pic-and-copy {
     display: flex;
     align-items: center;
@@ -16,13 +21,14 @@ const Wrap = styled.div`
 `
  
 const Hero = () => {
-  const data = useContext(DataContext)
+  const heroData = useContext(DataContext).allContentfulHero.edges[0].node
+  // console.log("hero data: ", heroData)
   return (
     <Wrap>
-      <h1>Theme Changer</h1>
+      <h1>{heroData.siteTitle}</h1>
       <div className="pic-and-copy">
-        <div className="pic">pic</div>
-        <div className="copy">copy</div>
+        <div className="pic"><Img fluid={heroData.image.fluid} alt={`alt`} /></div>
+        <div className="copy">{heroData.copy.copy}</div>
       </div>
     </Wrap>
   )

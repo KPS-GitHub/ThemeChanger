@@ -43,8 +43,9 @@ export const pageQuery = graphql`
             copy
           }
           image {
+            title
             fluid {
-              src
+              ...GatsbyContentfulFluid
             }
           }
         }
@@ -59,8 +60,9 @@ export const pageQuery = graphql`
               copy
             }
             image {
+              title
               fluid {
-                src
+                ...GatsbyContentfulFluid
               }
             }
           }
