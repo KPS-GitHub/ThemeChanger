@@ -1,6 +1,6 @@
 const MinimalThemeOptions = {
   window: {
-    background: 'white'
+
   },
   header: {
     container: {
@@ -24,8 +24,7 @@ const MinimalThemeOptions = {
   },
   content: {
     container: {
-      background: 'white',
-      color: 'black'
+
     },
     hero: {
 
