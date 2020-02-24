@@ -11,6 +11,17 @@ const InDevelopmentThemeOptions = {
       background: 'green',
       color: 'white',
     }
+  },
+  content: {
+    hero: {
+
+    },
+    slider: {
+
+    },
+    list: {
+
+    }
   }
 }
 

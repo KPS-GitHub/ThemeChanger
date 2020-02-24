@@ -19,7 +19,7 @@ const Hero = () => {
   const data = useContext(DataContext)
   return (
     <Wrap>
-      <div>title</div>
+      <h1>Theme Changer</h1>
       <div className="pic-and-copy">
         <div className="pic">pic</div>
         <div className="copy">copy</div>
