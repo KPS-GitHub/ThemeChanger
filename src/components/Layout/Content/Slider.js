@@ -5,7 +5,11 @@ import { DataContext } from '../../../DataContext'
  
 const Wrap = styled.div`
   .slider-row {
+    flex-wrap: nowrap;
+  }
+  .slide-window {
     display: flex;
+    justify-content: center;
     flex-wrap: nowrap;
   }
 `

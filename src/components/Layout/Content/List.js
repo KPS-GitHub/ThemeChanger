@@ -15,9 +15,9 @@ const List = props => {
       <h3>list of things</h3>
       <ul>
         {items ? 
-          items.map(item => {
+          items.map((item, i) => {
             return(
-              <li>{item}</li>
+              <li key={item+i}>{item}</li>
             )
           })
         : <div>sorry, no list items found :(</div>}
