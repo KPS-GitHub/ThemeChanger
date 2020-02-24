@@ -1,9 +1,18 @@
 const InDevelopmentThemeOptions = {
+  window: {
+    background: 'yellow'
+  },
   header: {
     container: {
       background: 'red',
       color: 'white',
-      borderBottom: '5px solid white',
+      borderBottom: '0',
+    }
+  },
+  footer: {
+    container: {
+      background: 'red',
+      color: 'white',
     }
   },
   sidebar: {
@@ -13,6 +22,10 @@ const InDevelopmentThemeOptions = {
     }
   },
   content: {
+    container: {
+      background: 'blue',
+      color: 'white'
+    },
     hero: {
 
     },
