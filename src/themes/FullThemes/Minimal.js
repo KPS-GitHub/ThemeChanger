@@ -31,21 +31,22 @@ const MinimalThemeOptions = {
       },
       itemButton: {
         WebkitAppearance: 'none',
-        background: 'grey',
+        background: 'black',
         color: 'white',
-        marginTop: '10px'
+        marginTop: '10px',
       },
       itemButtonActive: {
         WebkitAppearance: 'none',
-        background: 'white',
-        color: 'grey',
-        marginTop: '10px'
+        background: 'grey',
+        color: 'white',
+        marginTop: '10px',
       }
     }
   },
-  content: {
+  pageContent: {
     container: {
-
+      margin: '15px 0',
+      borderRight: '1px solid black'
     },
     hero: {
 
