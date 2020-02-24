@@ -9,7 +9,7 @@ import Themes from '../Themes/Themes'
 
 const Wrap = styled.div`
   * {
-    transition: all 0.25s ease;
+    transition: all 0.250s ease;
   }
 `
 
