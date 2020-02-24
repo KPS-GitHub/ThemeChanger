@@ -8,7 +8,9 @@ import Content from './Layout/Content/Content'
 import Themes from '../Themes/Themes'
 
 const Wrap = styled.div`
-
+  * {
+    transition: all 0.25s ease;
+  }
 `
 
 

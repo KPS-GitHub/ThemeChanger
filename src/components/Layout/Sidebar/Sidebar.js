@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import { DataContext } from '../../../DataContext'
 import styled from 'styled-components'
 import SidebarItem from './SidebarItem'
@@ -9,7 +9,7 @@ const Wrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  ul, li, button {
+  ul {
     width: 100%;
   }
 `
@@ -24,7 +24,6 @@ const SideBar = ({ styles, updateTheme, currentTheme }) => {
       <ul style={styles && styles.list && styles.list}>
         {themeData && 
           themeData.map((theme, i) => {
-            console.log("theme: ", theme);
             return (
               <SidebarItem theme={theme} styles={styles} updateTheme={updateTheme} currentTheme={currentTheme} />
             )
