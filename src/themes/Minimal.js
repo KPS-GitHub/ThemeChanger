@@ -1,6 +1,8 @@
 const MinimalThemeOptions = {
   window: {
-
+    fontFamily: 'sans-serif'
+  },
+  main: {
   },
   header: {
     container: {

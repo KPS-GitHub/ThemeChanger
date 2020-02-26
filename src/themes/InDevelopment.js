@@ -1,5 +1,8 @@
 const InDevelopmentThemeOptions = {
   window: {
+    fontFamily: 'serif'
+  },
+  main: {
     background: 'yellow'
   },
   header: {
