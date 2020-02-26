@@ -8,17 +8,17 @@ import Sidebar from './Layout/Sidebar'
 import Hero from './Layout/Content/Hero'
 import Slider from './Layout/Content/Slider'
 import List from './Layout/Content/List'
-import Themes from '../Themes/Themes'
+import Themes from '../themes/Themes'
 
 const Wrap = styled.div`
-  // .content-col {
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  // }
-  // .content-col > div {
-  //   margin-bottom: 4rem;
-  // }
+  .content-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-col > div {
+    margin-bottom: 4rem;
+  }
 `
 
 
@@ -34,7 +34,7 @@ const Page = ({ children }) => {
   const Theme = Themes[theme];
 
   return (
-    <Wrap style={Theme.window}>
+    <Wrap>
       <Container fluid style={Theme.header.container}>
         <Container>
           <Row>
@@ -44,7 +44,7 @@ const Page = ({ children }) => {
           </Row>
         </Container>    
       </Container>
-      <Container fluid style={Theme.main}>
+      <Container fluid style={Theme.window}>
         <Container>
           <Row>
             <Col sm={12} md={3}  style={Theme.sidebar.container}>
