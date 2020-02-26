@@ -8,14 +8,9 @@ import Sidebar from './Layout/Sidebar/Sidebar'
 import Themes from '../themes/Themes'
 
 const Wrap = styled.div`
-  // .content-col {
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  // }
-  // .content-col > div {
-  //   margin-bottom: 4rem;
-  // }
+  * {
+    transition: all 0.25s ease;
+  }
 `
 
 

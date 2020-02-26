@@ -3,7 +3,10 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 
 const Wrap = styled.li`
- 
+  width: 100%;
+  button {
+    width: 100%;
+  }
 `
 
 const SidebarItem = ({ theme, styles, updateTheme, currentTheme }) => {
