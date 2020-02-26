@@ -5,7 +5,7 @@ import Content from './Layout/Content/Content'
 import Header from './Layout/Header'
 import Footer from './Layout/Footer'
 import Sidebar from './Layout/Sidebar'
-import Themes from '../Themes/Themes'
+import Themes from '../Themes/Themes.js'
 
 const Wrap = styled.div`
   // .content-col {
