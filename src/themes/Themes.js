@@ -4,6 +4,6 @@ import MinimalTheme from './Minimal';
 const Themes = {
   InDevelopment: InDevTheme,
   Minimal: MinimalTheme,
-}
+};
 
-export default Themes
+export default Themes;

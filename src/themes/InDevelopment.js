@@ -1,5 +1,8 @@
 const InDevelopmentThemeOptions = {
   window: {
+    fontFamily: 'serif'
+  },
+  main: {
     background: 'yellow'
   },
   header: {
@@ -39,7 +42,7 @@ const InDevelopmentThemeOptions = {
       }
     }
   },
-  content: {
+  pageContent: {
     container: {
       background: 'blue',
       color: 'white'

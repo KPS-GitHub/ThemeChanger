@@ -1,6 +1,8 @@
 const MinimalThemeOptions = {
   window: {
-
+    fontFamily: 'sans-serif'
+  },
+  main: {
   },
   header: {
     container: {
@@ -28,19 +30,19 @@ const MinimalThemeOptions = {
       },
       itemButton: {
         WebkitAppearance: 'none',
-        background: 'grey',
+        background: 'black',
         color: 'white',
         marginTop: '10px'
       },
       itemButtonActive: {
         WebkitAppearance: 'none',
-        background: 'white',
-        color: 'grey',
+        background: 'grey',
+        color: 'white',
         marginTop: '10px'
       }
     }
   },
-  content: {
+  pageContent: {
     container: {
 
     },
