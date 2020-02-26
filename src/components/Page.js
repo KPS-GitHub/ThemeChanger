@@ -27,6 +27,7 @@ const Page = ({ children }) => {
   const [theme, setTheme] = useState('Minimal');
   const updateTheme = (thm) => {
     setTheme(thm)
+    // console.log(" current theme: ", thm)
   }
 
   const Theme = Themes[theme];
@@ -46,7 +47,7 @@ const Page = ({ children }) => {
         <Container>
           <Row>
             <Col sm={12} md={3}  style={Theme.sidebar.container}>
-              <Sidebar styles={Theme.sidebar.content && Theme.sidebar.content} updateTheme={updateTheme} />
+              <Sidebar styles={Theme.sidebar.content && Theme.sidebar.content} updateTheme={updateTheme} currentTheme={theme} />
             </Col>  
             <Col sm={12} md={9} className="content-col" style={Theme.content.container}>  {/* page content column */}
               <Hero />

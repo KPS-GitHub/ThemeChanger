@@ -13,19 +13,29 @@ const Wrap = styled.div`
   }
 `
 
-const SideBar = ({ styles, updateTheme }) => {
+const SideBar = ({ styles, updateTheme, currentTheme }) => {
   const themeData = useContext(DataContext).allContentfulThemes.edges[0].node.themesList;
+
+  console.log("styles: ", styles)
+
+  // console.log("currentTheme: ", currentTheme)
 
   return (
     <Wrap>
       <h5>Pick a Theme</h5>
+      <p>current theme: {currentTheme}</p>
       <ul style={styles && styles.list && styles.list}>
         {themeData && 
           themeData.map((theme, i) => {
+            console.log("theme.title: ", theme.title);
+            console.log("currentTheme: ", currentTheme);
+            console.log(" === ? ", theme.title === currentTheme)
             return (
               <li key={`theme`+i}>
-                <button
-                  style={styles && styles.itemButton && styles.itemButton}
+                <button key={`themeButton`+i}
+                  style={theme.title === currentTheme 
+                    ? styles && styles.itemButtonActive && styles.itemButtonActive
+                    : styles && styles.itemButton && styles.itemButton}
                   onClick={() => updateTheme(theme.title)}>
                     {theme.title}
                 </button>
