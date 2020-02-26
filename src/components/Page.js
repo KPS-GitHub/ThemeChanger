@@ -5,6 +5,9 @@ import Content from './Layout/Content/Content'
 import Header from './Layout/Header'
 import Footer from './Layout/Footer'
 import Sidebar from './Layout/Sidebar'
+import Hero from './Layout/Content/Hero'
+import Slider from './Layout/Content/Slider'
+import List from './Layout/Content/List'
 import Themes from '../Themes/Themes'
 
 const Wrap = styled.div`
@@ -48,7 +51,9 @@ const Page = ({ children }) => {
               <Sidebar styles={Theme.sidebar.content && Theme.sidebar.content} updateTheme={updateTheme} currentTheme={theme} />
             </Col>  
             <Col sm={12} md={9} className="content-col" style={Theme.content.container}>  {/* page content column */}
-              <Content />
+              <Hero />
+              <Slider />
+              <List />
             </Col>
           </Row>
         </Container>        
