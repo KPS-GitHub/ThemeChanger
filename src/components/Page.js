@@ -7,6 +7,10 @@ import Footer from './Layout/Footer'
 import Sidebar from './Layout/Sidebar/Sidebar'
 import Themes from '../themes/Themes'
 
+// IMPORTANT NOTE: some of the above imports are not consistent with the case of the folder names (ex: actual folder name: layout; imported folder: Layout)
+// -this is because Netlify seems to have a saved version of the folder names that has them all (except pages and themes) as starting with uppercase letter, so you have to use the uppercase version in the imports, regardless of the actual name, or the Netlify build will fail
+// -I will look into how to "reset" Netlify's version of the file/folder names, but for now, this is what we have to do
+
 const Wrap = styled.div`
   * {
     transition: all 0.25s ease;
