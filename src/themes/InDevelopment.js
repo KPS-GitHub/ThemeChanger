@@ -42,7 +42,7 @@ const InDevelopmentThemeOptions = {
       }
     }
   },
-  content: {
+  pageContent: {
     container: {
       background: 'blue',
       color: 'white'

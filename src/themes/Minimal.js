@@ -30,19 +30,19 @@ const MinimalThemeOptions = {
       },
       itemButton: {
         WebkitAppearance: 'none',
-        background: 'grey',
+        background: 'black',
         color: 'white',
         marginTop: '10px'
       },
       itemButtonActive: {
         WebkitAppearance: 'none',
-        background: 'white',
-        color: 'grey',
+        background: 'grey',
+        color: 'white',
         marginTop: '10px'
       }
     }
   },
-  content: {
+  pageContent: {
     container: {
 
     },

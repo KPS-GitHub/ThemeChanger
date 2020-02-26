@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import Content from './Layout/Content/Content'
 import Header from './Layout/Header'
 import Footer from './Layout/Footer'
-import Sidebar from './Layout/Sidebar'
+import Sidebar from './Layout/Sidebar/Sidebar'
 import Themes from '../themes/Themes'
 
 const Wrap = styled.div`
@@ -47,7 +47,7 @@ const Page = ({ children }) => {
             <Col sm={12} md={3}  style={Theme.sidebar.container}>
               <Sidebar styles={Theme.sidebar.content && Theme.sidebar.content} updateTheme={updateTheme} currentTheme={theme} />
             </Col>  
-            <Col sm={12} md={9} className="content-col" style={Theme.content.container}>  {/* page content column */}
+            <Col sm={12} md={9} className="content-col" style={Theme.pageContent.container}>  {/* page content column */}
               <Content />
             </Col>
           </Row>

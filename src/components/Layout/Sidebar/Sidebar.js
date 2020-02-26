@@ -1,6 +1,7 @@
-import React, { useContext } from 'react'
-import { DataContext } from '../../DataContext'
+import React, { useContext, useState } from 'react'
+import { DataContext } from '../../../DataContext'
 import styled from 'styled-components'
+import SidebarItem from './SidebarItem'
  
 const Wrap = styled.div`
   // padding-left: 25px;
@@ -31,15 +32,16 @@ const SideBar = ({ styles, updateTheme, currentTheme }) => {
             console.log("currentTheme: ", currentTheme);
             console.log(" === ? ", theme.title === currentTheme)
             return (
-              <li key={`theme`+i}>
-                <button key={`themeButton`+i}
-                  style={theme.title === currentTheme 
-                    ? styles && styles.itemButtonActive && styles.itemButtonActive
-                    : styles && styles.itemButton && styles.itemButton}
-                  onClick={() => updateTheme(theme.title)}>
-                    {theme.title}
-                </button>
-              </li>
+              <SidebarItem theme={theme} styles={styles} updateTheme={updateTheme} currentTheme={currentTheme} />
+              // <li key={`theme`+i}>
+              //   <button key={`themeButton`+i}
+              //     style={theme.title === currentTheme 
+              //       ? styles && styles.itemButtonActive && styles.itemButtonActive
+              //       : styles && styles.itemButton && styles.itemButton}
+              //     onClick={() => updateTheme(theme.title)}>
+              //       {theme.title}
+              //   </button>
+              // </li>
             )
           })
         }
