@@ -20,6 +20,23 @@ const InDevelopmentThemeOptions = {
       background: 'green',
       color: 'white',
       paddingTop: '30px'
+    },
+    content: {
+      list: {
+
+      },
+      itemButton: {
+        WebkitAppearance: 'none',
+        background: 'grey',
+        color: 'white',
+        marginTop: '10px'
+      },
+      itemButtonActive: {
+        WebkitAppearance: 'none',
+        marginTop: '10px',
+        background: 'white',
+        color: 'grey'
+      }
     }
   },
   content: {
