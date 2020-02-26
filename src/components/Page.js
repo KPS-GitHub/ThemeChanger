@@ -5,20 +5,17 @@ import Content from './Layout/Content/Content'
 import Header from './Layout/Header'
 import Footer from './Layout/Footer'
 import Sidebar from './Layout/Sidebar'
-import Hero from './Layout/Content/Hero'
-import Slider from './Layout/Content/Slider'
-import List from './Layout/Content/List'
 import Themes from '../themes/Themes'
 
 const Wrap = styled.div`
-  .content-col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .content-col > div {
-    margin-bottom: 4rem;
-  }
+  // .content-col {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  // }
+  // .content-col > div {
+  //   margin-bottom: 4rem;
+  // }
 `
 
 
@@ -34,7 +31,7 @@ const Page = ({ children }) => {
   const Theme = Themes[theme];
 
   return (
-    <Wrap>
+    <Wrap style={Theme.window}>
       <Container fluid style={Theme.header.container}>
         <Container>
           <Row>
@@ -44,16 +41,14 @@ const Page = ({ children }) => {
           </Row>
         </Container>    
       </Container>
-      <Container fluid style={Theme.window}>
+      <Container fluid style={Theme.main}>
         <Container>
           <Row>
             <Col sm={12} md={3}  style={Theme.sidebar.container}>
               <Sidebar styles={Theme.sidebar.content && Theme.sidebar.content} updateTheme={updateTheme} currentTheme={theme} />
             </Col>  
             <Col sm={12} md={9} className="content-col" style={Theme.content.container}>  {/* page content column */}
-              <Hero />
-              <Slider />
-              <List />
+              <Content />
             </Col>
           </Row>
         </Container>        
