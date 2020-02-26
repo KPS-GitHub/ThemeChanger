@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { Container, Row, Col } from 'react-bootstrap'
-import Content from './layout/content/Content'
-import Header from './layout/Header'
-import Footer from './layout/Footer'
-import Sidebar from './layout/sidebar/Sidebar'
+import Content from './Layout/Content/Content'
+import Header from './Layout/Header'
+import Footer from './Layout/Footer'
+import Sidebar from './Layout/Sidebar/Sidebar'
 import Themes from '../themes/Themes'
 
 const Wrap = styled.div`
