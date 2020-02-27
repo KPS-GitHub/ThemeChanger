@@ -44,7 +44,9 @@ const MinimalThemeOptions = {
   },
   pageContent: {
     container: {
-
+      margin: '3rem 0',
+      padding: '0 3rem',
+      borderRight: '2px solid #ededed'
     },
     hero: {
       picAndCopy: {
