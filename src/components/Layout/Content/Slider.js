@@ -8,6 +8,10 @@ const Wrap = styled.div`
   width: 100%;
   .slider-row {
     flex-wrap: nowrap;
+    button {
+      width: 100%;
+      height: 100%;
+    }
   }
   .slide-window {
     overflow: hidden;
