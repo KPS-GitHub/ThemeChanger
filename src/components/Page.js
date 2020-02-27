@@ -47,7 +47,7 @@ const Page = ({ children }) => {
               <Sidebar styles={Theme.sidebar.content && Theme.sidebar.content} updateTheme={updateTheme} currentTheme={theme} />
             </Col>  
             <Col sm={12} md={9} className="content-col" style={Theme.pageContent.container}>  {/* page content column */}
-              <Content />
+              <Content styles={Theme.pageContent} />
             </Col>
           </Row>
         </Container>        

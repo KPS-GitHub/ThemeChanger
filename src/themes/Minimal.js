@@ -6,20 +6,20 @@ const MinimalThemeOptions = {
   },
   header: {
     container: {
-      background: 'black',
-      color: 'white',
+      background: '#ededed',
+      color: 'black',
     }
   },
   footer: {
     container: {
-      background: 'black',
-      color: 'white',
+      background: '#ededed',
+      color: 'black',
     }
   },
   sidebar: {
     container: {
-      background: 'black',
-      color: 'white',
+      background: '#ededed',
+      color: 'black',
       paddingTop: '25px',
       margin: '5px 0'
     },
@@ -30,14 +30,14 @@ const MinimalThemeOptions = {
       },
       itemButton: {
         WebkitAppearance: 'none',
-        background: 'black',
-        color: 'white',
+        background: '#ededed',
+        color: 'black',
         marginTop: '10px'
       },
       itemButtonActive: {
         WebkitAppearance: 'none',
-        background: 'grey',
-        color: 'white',
+        background: 'white',
+        color: 'black',
         marginTop: '10px'
       }
     }
@@ -47,7 +47,12 @@ const MinimalThemeOptions = {
 
     },
     hero: {
-
+      picAndCopy: {
+        alignItems: 'center',
+      },
+      image: {
+        borderRadius: '1000px',
+      }
     },
     slider: {
 

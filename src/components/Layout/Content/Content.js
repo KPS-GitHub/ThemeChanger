@@ -10,12 +10,12 @@ const Wrap = styled.div`
  }
 `
 
-const Content = props => {
+const Content = ({ styles }) => {
   return (
     <Wrap>
-      <Hero />
-      <Slider />
-      <List />
+      <Hero styles={styles.hero} />
+      <Slider styles={styles.slider} />
+      <List styles={styles.list} />
     </Wrap>
   )
 }
