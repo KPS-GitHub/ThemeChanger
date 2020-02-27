@@ -25,7 +25,7 @@ const SideBar = ({ styles, updateTheme, currentTheme }) => {
         {themeData && 
           themeData.map((theme, i) => {
             return (
-              <SidebarItem theme={theme} styles={styles} updateTheme={updateTheme} currentTheme={currentTheme} />
+              <SidebarItem theme={theme} styles={styles} updateTheme={updateTheme} currentTheme={currentTheme} key={`sidebarItem`+i} />
               // <li key={`theme`+i}>
               //   <button key={`themeButton`+i}
               //     style={theme.title === currentTheme 

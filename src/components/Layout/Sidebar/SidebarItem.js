@@ -16,7 +16,7 @@ const SidebarItem = ({ theme, styles, updateTheme, currentTheme }) => {
   }
 
   return (
-    <Wrap style={isHovered ? {opacity: 0.9} : {opacity: 1}}>
+    <Wrap style={isHovered ? {opacity: 0.9} : {opacity: 1}} >
       <button
         style={theme.title === currentTheme ?
           styles && styles.itemButtonActive && styles.itemButtonActive
