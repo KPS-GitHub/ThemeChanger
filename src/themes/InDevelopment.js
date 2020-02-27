@@ -48,7 +48,9 @@ const InDevelopmentThemeOptions = {
       color: 'white'
     },
     hero: {
-
+      image: {
+        
+      }
     },
     slider: {
 

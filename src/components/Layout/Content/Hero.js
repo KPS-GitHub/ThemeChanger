@@ -24,14 +24,15 @@ const Wrap = styled.div`
   }
 `
  
-const Hero = () => {
+const Hero = ({ styles }) => {
   const heroData = useContext(DataContext).allContentfulHero.edges[0].node
   // console.log("hero data: ", heroData)
+  console.log("styles: ", styles)
   return (
     <Wrap>
       <h1>{heroData.siteTitle}</h1>
-      <div className="pic-and-copy">
-        <div className="pic"><Img fluid={heroData.image.fluid} alt={`alt`} /></div>
+      <div className="pic-and-copy" style={styles.picAndCopy}>
+        <div className="pic"><Img fluid={heroData.image.fluid} alt={`alt`} style={styles.image} /></div>
         <div className="copy">{heroData.copy.copy}</div>
       </div>
     </Wrap>
