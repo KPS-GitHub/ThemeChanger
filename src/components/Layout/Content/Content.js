@@ -10,7 +10,7 @@ const Wrap = styled.div`
  }
 `
 
-const Content = ({ styles }) => {
+const Content = ({ styles }) => { 
   return (
     <Wrap>
       <Hero styles={styles.hero} />
