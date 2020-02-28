@@ -60,7 +60,19 @@ const MinimalThemeOptions = {
       }
     },
     slider: {
-
+      button: {
+        border: 0,
+        background: 'none',
+      },
+      buttonHovered: {
+        border: 0,
+        background: '#ededed'
+      },
+      buttonText: {
+        transform: 'scaleY(4) scaleX(2)',
+        fontSize: '1.5rem',
+        fontWeight: 100
+      }
     },
     list: {
 

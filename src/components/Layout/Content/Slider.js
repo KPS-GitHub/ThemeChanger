@@ -31,9 +31,12 @@ const Wrap = styled.div`
     flex-wrap: nowrap;
     transition: transform 0.5s ease;
   }
+  button:focus {
+    outline: 0;
+  }
 `
 
-const Slider = props => {
+const Slider = ({ styles }) => {
   const slides = useContext(DataContext).allContentfulSlider.edges[0].node.slides;
 
   // ============== sizing for layout, responsiveness, and slide row positioning to show correct slide ============== //
@@ -69,14 +72,28 @@ const Slider = props => {
     )
   }
 
+  // ================ hover functionality for prev/next buttons ==================== //
+  const [isPrevHovered, setIsPrevHovered] = useState(false);
+  const togglePrevHover = () => {
+    setIsPrevHovered(!isPrevHovered)
+  }
+
+  const [isNextHovered, setIsNextHovered] = useState(false);
+  const toggleNextHover = () => {
+    setIsNextHovered(!isNextHovered)
+  }
+
   return (
     <Wrap >
       <Container fluid>
         <Row className="slider-row">
           <Col sm={2}>
-            {currentIndex > 0 ?
-              <button onClick={() => changeSlide(currentIndex, "prev")}>{'<'}</button>
-            : null}
+              <button 
+                onClick={() => changeSlide(currentIndex, "prev")} 
+                onMouseEnter={() => togglePrevHover()} onMouseLeave={() => togglePrevHover()} 
+                style={isPrevHovered ? styles.buttonHovered : styles.button} >
+                  <p style={styles.buttonText}>{'<'}</p>
+              </button>
           </Col>
           <Col sm={8} className="slide-window"  style={{height: slideHeight + `px`}}>
             <Container fluid className="slides-container">
@@ -95,9 +112,12 @@ const Slider = props => {
             </Container>
           </Col>
           <Col sm={2}>
-            {currentIndex < slides.length - 1 ?
-              <button onClick={() => changeSlide(currentIndex, "next")}>{'>'}</button>
-            : null}
+              <button 
+                onClick={() => changeSlide(currentIndex, "next")} 
+                onMouseEnter={() => toggleNextHover()} onMouseLeave={() => toggleNextHover()} 
+                style={isNextHovered ? styles.buttonHovered : styles.button} >
+                  <p style={styles.buttonText}>{'>'}</p>
+              </button>
           </Col>
         </Row>
       </Container>
