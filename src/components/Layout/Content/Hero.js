@@ -26,8 +26,7 @@ const Wrap = styled.div`
  
 const Hero = ({ styles }) => {
   const heroData = useContext(DataContext).allContentfulHero.edges[0].node
-  // console.log("hero data: ", heroData)
-  console.log("styles: ", styles)
+
   return (
     <Wrap>
       <h1>{heroData.siteTitle}</h1>
