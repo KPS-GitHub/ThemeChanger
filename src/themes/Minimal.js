@@ -47,9 +47,8 @@ const MinimalThemeOptions = {
   },
   pageContent: {
     container: {
-      margin: '3rem 0',
-      padding: '0 3rem',
-      borderRight: '2px solid #ededed'
+      padding: '0.5rem 2rem',
+      position: 'relative'
     },
     hero: {
       picAndCopy: {
@@ -60,6 +59,25 @@ const MinimalThemeOptions = {
       }
     },
     slider: {
+      slide: {
+        container: {
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center'
+        },
+        title: {
+          textAlign: 'center',
+          width: '75%'
+        },
+        image: {
+          width: '100%',
+          height: '100%'
+        },
+        copy: {
+          textAlign: 'center',
+          width: '75%'
+        }
+      },
       button: {
         border: 0,
         background: 'none',
@@ -76,7 +94,17 @@ const MinimalThemeOptions = {
     },
     list: {
 
-    }
+    },
+    rightBorderDiv: {
+      position: 'absolute',
+      zIndex: -10,
+      left: 0,
+      bottom: '2.5%',
+      width: '100%',
+      height: '95%',
+      borderRight: '3px solid #ededed',
+      marginBottom: 0
+    },
   }
 }
 

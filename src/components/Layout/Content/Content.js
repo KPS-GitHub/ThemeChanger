@@ -12,7 +12,7 @@ const Wrap = styled.div`
 
 const Content = ({ styles }) => { 
   return (
-    <Wrap>
+    <Wrap style={styles.container}>
       <Hero styles={styles.hero} />
       <Slider styles={styles.slider} />
       <List styles={styles.list} />

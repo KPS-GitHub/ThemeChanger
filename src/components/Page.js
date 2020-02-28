@@ -48,6 +48,9 @@ const Page = ({ children }) => {
             </Col>  
             <Col sm={12} md={9} className="content-col" style={Theme.pageContent.container}>  {/* page content column */}
               <Content styles={Theme.pageContent} />
+              {theme === "Minimal" 
+              ? <div style={Theme.pageContent.rightBorderDiv}></div>
+              : null}
             </Col>
           </Row>
         </Container>        

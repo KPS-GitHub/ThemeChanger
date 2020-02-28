@@ -37,6 +37,8 @@ const Wrap = styled.div`
 `
 
 const Slider = ({ styles }) => {
+  console.log("slider styles prop: ", styles)
+
   const slides = useContext(DataContext).allContentfulSlider.edges[0].node.slides;
 
   // ============== sizing for layout, responsiveness, and slide row positioning to show correct slide ============== //
@@ -101,10 +103,10 @@ const Slider = ({ styles }) => {
                 {slides && 
                   slides.map((slide, i) => {
                     return (
-                      <Col sm={12} key={`slide`+i} ref={slideRef}>
-                        <h5>{slide.title}</h5>
-                        <Img fluid={slide.image.fluid} alt={slide.image.title} />
-                        <p>{slide.copy.copy}</p>
+                      <Col style={styles.slide.container} sm={12} key={`slide`+i} ref={slideRef}>
+                        <h5 style={styles.slide.title}>{slide.title}</h5>
+                        <Img style={styles.slide.image} fluid={slide.image.fluid} alt={slide.image.title} />
+                        <p style={styles.slide.copy}>{slide.copy.copy}</p>
                       </Col>
                     )
                   })}
