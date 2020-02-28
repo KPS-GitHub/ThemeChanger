@@ -1,6 +1,7 @@
 const MinimalThemeOptions = {
   window: {
-    fontFamily: 'sans-serif'
+    fontFamily: 'roboto',
+    fontWeight: 100,
   },
   main: {
   },
@@ -32,13 +33,15 @@ const MinimalThemeOptions = {
         WebkitAppearance: 'none',
         background: '#ededed',
         color: 'black',
-        marginTop: '10px'
+        marginTop: '10px',
+        fontWeight: 'inherit'
       },
       itemButtonActive: {
         WebkitAppearance: 'none',
         background: 'white',
         color: 'black',
-        marginTop: '10px'
+        marginTop: '10px',
+        fontWeight: 'inherit'
       }
     }
   },
