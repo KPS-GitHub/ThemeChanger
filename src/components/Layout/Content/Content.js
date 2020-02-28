@@ -6,7 +6,7 @@ import Slider from './Slider'
 
 const Wrap = styled.div`
  > div {
-    margin-bottom: 4rem;
+    margin-bottom: 4rem; 
  }
 `
 
