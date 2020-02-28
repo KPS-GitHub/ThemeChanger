@@ -76,7 +76,7 @@ const MinimalThemeOptions = {
         copy: {
           textAlign: 'center',
           width: '75%'
-        }
+        },
       },
       button: {
         border: 0,
@@ -90,6 +90,23 @@ const MinimalThemeOptions = {
         transform: 'scaleY(4) scaleX(2)',
         fontSize: '1.5rem',
         fontWeight: 100
+      },
+      dots: {
+        dot: {
+          width: '15px',
+          height: '15px',
+          margin: '10px',
+          borderRadius: '100%',
+          border: '2px solid black'
+        },
+        dotActive: {
+          width: '15px',
+          height: '15px',
+          margin: '10px',
+          borderRadius: '100%',
+          border: '2px solid black',
+          background: 'lightgray'
+        }
       }
     },
     list: {

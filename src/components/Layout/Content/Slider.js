@@ -34,6 +34,11 @@ const Wrap = styled.div`
   button:focus {
     outline: 0;
   }
+  .dots-col {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
 `
 
 const Slider = ({ styles }) => {
@@ -120,6 +125,15 @@ const Slider = ({ styles }) => {
                 style={isNextHovered ? styles.buttonHovered : styles.button} >
                   <p style={styles.buttonText}>{'>'}</p>
               </button>
+          </Col>
+        </Row>
+        <Row>
+          <Col sm={12} className="dots-col">
+            {slides.map((slide, i) => {
+              return(
+                <div style={i === currentIndex ? styles.dots.dotActive : styles.dots.dot}></div>
+              )
+            })}
           </Col>
         </Row>
       </Container>

@@ -66,6 +66,22 @@ const InDevelopmentThemeOptions = {
         copy: {
           
         }
+      },
+      dots: {
+        dot: {
+          width: '15px',
+          height: '15px',
+          margin: '10px',
+          border: '2px solid black',
+          background: 'white'
+        },
+        dotActive: {
+          width: '15px',
+          height: '15px',
+          margin: '10px',
+          border: '2px solid black',
+          background: 'black'
+        }
       }
     },
     list: {
