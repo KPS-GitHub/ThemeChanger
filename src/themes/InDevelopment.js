@@ -53,7 +53,20 @@ const InDevelopmentThemeOptions = {
       }
     },
     slider: {
+      slide: {
+        container: {
 
+        },
+        title: {
+
+        },
+        image: {
+
+        },
+        copy: {
+          
+        }
+      }
     },
     list: {
 
